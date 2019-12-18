@@ -1,0 +1,19 @@
+server:
+  port: 8061
+
+limit:
+  minMoney: 0.01
+  maxMoney: 999
+  description: 最少要发${limit.minMoney}元,最多可发${limit.maxMoney}元
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/luckymoney?serverTimezone=UTC&characterEncoding=utf-8
+    username: root
+    password: 970713
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+

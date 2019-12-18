@@ -1,0 +1,7 @@
+server:
+  port: 8061
+
+limit:
+  minMoney: 2
+  maxMoney: 999
+  description: 最少要发${limit.minMoney}元,最多可发${limit.maxMoney}元
